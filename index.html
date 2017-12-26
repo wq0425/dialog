@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<button type="button" id="btn">删除</button>
+</body>
+<script src="js/index.js"></script>
+<script>
+new Tanc({
+    title:"购物车",
+    content:"您确定要删除不购买了吗？",
+    buttons:["确认","取消"],
+    successCallback:function(){
+        document.body.removeChild(box);
+    }, // 点击确认按钮的回调函数
+    cancelCallback:function(){
+        document.body.removeChild(box);
+    } // 点击取消按钮的回调函数
+})
+</script>
+</html>
